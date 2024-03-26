@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   get "articles", to: "articles#index"
 
   resources :articles do
-    resource :comments
+    resources :comments
   end
 end
